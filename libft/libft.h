@@ -4,7 +4,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
-# define BUFF_SIZE 32
+# define BUFF_SIZE 1
 
 typedef struct		s_list
 {
@@ -13,18 +13,9 @@ typedef struct		s_list
     struct s_list	*next;
 }					t_list;
 
-typedef struct		s_btree
-{
-    struct s_btree	*left;
-    struct s_btree	*right;
-    void			*item;
-}					t_btree;
-
-typedef struct        s_cell
-{
-    char            *stock;
-    int            prev_fd;
-}                   t_cell;
-
-
+int ft_atoi(const char *str);
+int ft_isalpha(int c);
+void    *ft_memset(void *b, int c, size_t len);
+void    ft_putstr(char *str);
+void    ft_putnbr(int n);
 #endif 
