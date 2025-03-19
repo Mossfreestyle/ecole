@@ -37,4 +37,6 @@ int ft_strncmp(const char *s1, const char *s2, size_t n);
 char    *ft_strncpy(char *dst, const char *src, size_t len);
 char    *ft_strncat(char *s1, const char *s2, size_t n);
 int ft_isprint(int c);
-#endif 
+void    ft_putchar_fd(char c, int fd);
+void    ft_putnbr_fd(int n, int fd);
+#endif
