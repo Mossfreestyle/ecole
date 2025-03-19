@@ -28,5 +28,9 @@ int ft_sqrt(int nb);
 char    *ft_strcpy(char *dst, const char *src);
 char    *ft_strrev(char *str);
 void    ft_swap(int *a, int *b);
-char    *ft_strdup(const char *s1)
+char    *ft_strdup(const char *s1);
+int tab_count(char **tab);
+int ft_power(int nb, int power);
+size_t  ft_strlen(const char *s);
+char    *ft_strstr(const char *haystack, const char *needle);
 #endif 
