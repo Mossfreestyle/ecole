@@ -18,4 +18,5 @@ int ft_isalpha(int c);
 void    *ft_memset(void *b, int c, size_t len);
 void    ft_putstr(char *str);
 void    ft_putnbr(int n);
+void    ft_putchar(char c);
 #endif 
