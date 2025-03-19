@@ -33,4 +33,8 @@ int tab_count(char **tab);
 int ft_power(int nb, int power);
 size_t  ft_strlen(const char *s);
 char    *ft_strstr(const char *haystack, const char *needle);
+int ft_strncmp(const char *s1, const char *s2, size_t n);
+char    *ft_strncpy(char *dst, const char *src, size_t len);
+char    *ft_strncat(char *s1, const char *s2, size_t n);
+int ft_isprint(int c);
 #endif 
