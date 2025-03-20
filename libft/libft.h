@@ -39,4 +39,5 @@ char    *ft_strncat(char *s1, const char *s2, size_t n);
 int ft_isprint(int c);
 void    ft_putchar_fd(char c, int fd);
 void    ft_putnbr_fd(int n, int fd);
+void    ft_putstr_fd(char const *s, int fd);
 #endif
