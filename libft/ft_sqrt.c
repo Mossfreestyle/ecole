@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int ft_sqrt(int nb)
 {
     int i;
