@@ -22,3 +22,14 @@ void    ft_putnbr_fd(int n, int fd)
         ft_putnbr_fd((n % 10), fd);
     }
 }
+
+/*
+int	main(int argc, char **argv)
+{
+	if (argc == 3)
+	{
+		ft_putnbr_fd(atoi(argv[1]), atoi(argv[2]));
+	}
+	return (0);
+}
+*/

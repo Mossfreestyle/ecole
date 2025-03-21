@@ -16,3 +16,21 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	}
 	resturn (dest1);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(int argc, char **argv)
+{
+	char	*i;
+	char	*j;
+
+	if (argc == 4)
+	{
+		i = ft_memcpy(argv[1], argv[2], atoi(argv[3]));
+		j = memcpy(argv[1], argv[2], atoi(argv[3]));
+		printf("Mine : %s\nReal : %s\n", i, j);
+	}
+	return (0);
+}
+*/

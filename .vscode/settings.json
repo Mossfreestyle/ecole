@@ -4,4 +4,9 @@
 "editor.renderWhitespace": "all",
 "files.trimTrailingWhitespace": true,
 "files.insertFinalNewline": true,
+"files.associations": {
+	"strings.h": "c",
+	"ctype.h": "c",
+	"stdio.h": "c"
+},
 }

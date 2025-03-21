@@ -21,3 +21,15 @@ int ft_atoi(const char *str)
     }
     return (result * sign);
 }
+
+/*
+#include <stdio.h>
+int	main(int argc, char **argv)
+{
+	if (argc == 2)
+	{
+		printf("Mine : %d\nReal : %d\n", ft_atoi(argv[1]), atoi(argv[1]));
+	}
+	return (0);
+}
+*/

@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int tab_count(char **tab)
+int ft_counttab(char **tab)
 {
     int i;
 

@@ -11,3 +11,14 @@ void    ft_putstr_fd(char const *s, int fd)
         i++;
     write(fd, s, i);
 }
+
+/*
+int	main(int argc, char **argv)
+{
+	if (argc == 3)
+	{
+		ft_putstr_fd(argv[1], atoi(argv[2]));
+	}
+	return (0);
+}
+*/

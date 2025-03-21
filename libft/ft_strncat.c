@@ -20,3 +20,4 @@ char    *ft_strncat(char *s1, const char *s2, size_t n)
     result[i] = '\0';
     return (result);
 }
+
