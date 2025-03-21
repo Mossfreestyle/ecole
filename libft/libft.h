@@ -50,7 +50,6 @@ char    *ft_strstr(const char *haystack, const char *needle);
 void    ft_swap(int *a, int *b);
 size_t  ft_strlen(const char *s);
 char    *ft_strncat(char *s1, const char *s2, size_t n);
-int ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
 
