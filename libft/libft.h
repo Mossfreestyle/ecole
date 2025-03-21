@@ -45,5 +45,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t len);
 void	ft_bzero(void *s, size_t len);
 void	*ft_calloc(size_t nb, size_t len);
 void	ft_putendl_fd(char *s, int fd);
+int	ft_toupper(int c);
+int	ft_tolower(int c);
+char	*ft_itoa(int n);
 
 #endif
