@@ -36,6 +36,17 @@ SRC = ft_atoi.c \
 				ft_toupper.c
 OBJ = $(SRC:.c=.o)
 
+BONUS = ft_lstnew.c	\
+				ft_lstadd_front.c	\
+				ft_lstsize.c	\
+				ft_lstlast.c	\
+				ft_lstadd_back.c	\
+				ft_lstdelone.c	\
+				ft_lstclear.c	\
+				ft_lstiter.c	\
+				ft_lstmap.c
+BOBJ = $(BONUS:.c=.o)
+
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -f
@@ -46,11 +57,14 @@ all : $(NAME)
 $(NAME) : $(OBJ) $(HEADER)
 				ar -rcs $@ $^
 
+bonus: $(OBJ) &(HEADER)
+				ar -rcs $(NAME) $(OBJ) $(BOBJ)
+
 %.o : %.c
 		$(CC) $(FLAGS) -c -o $@ $^
 
 clean :
-				$(RM) $(OBJ)
+				$(RM) $(OBJ) $(BOBJ)
 
 fclean : clean
 				$(RM) $(NAME)

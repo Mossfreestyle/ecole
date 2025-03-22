@@ -7,6 +7,7 @@
 "files.associations": {
 	"strings.h": "c",
 	"ctype.h": "c",
-	"stdio.h": "c"
+	"stdio.h": "c",
+	"libft.h": "c"
 },
 }
