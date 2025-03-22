@@ -1,24 +1,39 @@
 #include "libft.h"
 
-char    *ft_strstr(const char *haystack, const char *needle)
+char    *ft_strstr(const char *s1, const char *s2)
 {
-    char    *a;
-    char    *b;
+    int i;
+    int j;
+    int len_s2;
 
-    if (*needle)
-        return ((char *)haystack);
-    while (*haystack)
+    if (*s2 == '\0')
+        return ((char *)s1);
+    while (s1[i])
     {
-        a = (char *)haystack;
-        b = (char *)needle;
-        while (*a != '\0' && *a == *b)
+        if (s1[i] == s2[0])
         {
-            a++;
-            b++;
+            j = 0;
+            while (j < len_s2 && s1[i + j] == s2[j])
+                j++;
+            if (j == len_s2)
+                return ((char *)&s1[i]);
         }
-        while (*b)
-            return ((char *)haystack);
-        haystack++;
+        i++;
     }
     return (NULL);
 }
+
+/*int main(int argc, char **argv)
+{
+    char    *result;
+
+    if (argc == 3)
+    {
+        result = ft_strstr(argv[1], argv[2]);
+        if (result)
+            printf("chaine trouvee: %s\n", result);
+        else
+            printf("introuvable\n");
+    }
+    return (0);
+}*/
