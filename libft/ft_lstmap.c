@@ -4,8 +4,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newlist;
 	t_list	*new;
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 
 	if (!lst || !f || !del)
 		return (0);
@@ -72,5 +72,5 @@ int main(void)
     ft_lstclear(&mapped_list, del_content);
 
     return (0);
-	//gcc -Wall -Wextra -Werror ft_lstmap.c ft_lstnew.c ft_lstadd_back.c ft_lstclear.c -o test && ./test
+	gcc -Wall -Wextra -Werror ft_lstmap.c ft_lstnew.c ft_lstadd_back.c ft_lstclear.c -o test && ./test
 }*/

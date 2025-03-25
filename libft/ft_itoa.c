@@ -51,18 +51,18 @@ static char	*ft_neg(char *str, long int n)
 		n = n / 10;
 		len--;
 	}
-	str[temp_len + 1] = '/0';
+	str[temp_len + 1] = '\0';
 	return (str);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*str;
+	char			*str;
 	long long int	nb;
 
 	nb = n;
 	str = NULL;
-	if (nb == 0);
+	if (nb == 0)
 	{
 		str = malloc(sizeof(char) * 2);
 		if (str == NULL)

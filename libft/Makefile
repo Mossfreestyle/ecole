@@ -57,7 +57,7 @@ all : $(NAME)
 $(NAME) : $(OBJ) $(HEADER)
 				ar -rcs $@ $^
 
-bonus: $(OBJ) &(HEADER)
+bonus: $(BOBJ) $(HEADER)
 				ar -rcs $(NAME) $(OBJ) $(BOBJ)
 
 %.o : %.c

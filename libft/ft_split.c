@@ -2,14 +2,14 @@
 
 static int	ft_mot(const char *s, char c)
 {
-	int	count;
-	int	mot;
+	int		count;
+	int		mot;
 	size_t	i;
 
 	count = 0;
 	mot = 0;
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		if (s[i] != c && mot == 0)
 		{
@@ -52,7 +52,7 @@ static void	ft_tab(int *tab, const char *s, char c)
 	}
 }
 
-static void	ft_free(char **strmalloc, int	i, int	*tab)
+static void	ft_free(char **strmalloc, int i, int *tab)
 {
 	if (strmalloc != NULL)
 	{
@@ -68,10 +68,10 @@ static void	ft_free(char **strmalloc, int	i, int	*tab)
 		free(tab);
 }
 
-static char	*ft_strsplit(const char *s, int	start, int len)
+static char	*ft_strsplit(const char *s, int start, int len)
 {
 	char	*str;
-	int	i;
+	int		i;
 
 	i = 0;
 	str = malloc(sizeof(char) * (len + 1));
@@ -89,9 +89,9 @@ static char	*ft_strsplit(const char *s, int	start, int len)
 
 char	**ft_split(char const *s, char c)
 {
-	int	i;
-	int	j;
-	int	*tab;
+	int		i;
+	int		j;
+	int		*tab;
 	char	**strmalloc;
 
 	i = 0;
@@ -114,7 +114,6 @@ char	**ft_split(char const *s, char c)
 	strmalloc[i] = NULL;
 	return (free(tab), strmalloc);
 }
-
 
 /*#include <stdio.h>
 int	main(int argc, char **argv)

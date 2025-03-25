@@ -17,10 +17,10 @@ static int	is_set(char c, const char *set)
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	int	i;
-	int	j;
-	int	len;
-	int	new_len;
+	int		i;
+	int		j;
+	int		len;
+	int		new_len;
 	char	*strmalloc;
 
 	i = 0;

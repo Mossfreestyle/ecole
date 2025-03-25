@@ -2,7 +2,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*dest1;
 	unsigned char	*src1;
 
@@ -14,7 +14,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 		dest1[i] = src1[i];
 		i++;
 	}
-	resturn (dest1);
+	return (dest1);
 }
 
 /*

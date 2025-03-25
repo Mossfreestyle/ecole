@@ -2,10 +2,10 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	int				i;
 	unsigned char	*s2;
 
-	s2 = (unsigned char)s;
+	s2 = (unsigned char *)s;
 	if (c == '\0')
 	{
 		i = ft_strlen(s);
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (s[i] == (char)c)
 			return ((char *)&s2[i]);
-			i++;
+		i++;
 	}
 	return (NULL);
 }

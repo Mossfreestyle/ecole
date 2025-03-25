@@ -3,8 +3,8 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	int	len;
-	char	*strmalloc;
+	int				len;
+	char			*strmalloc;
 
 	i = 0;
 	len = 0;

@@ -2,10 +2,10 @@
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*strmalloc;
-	int	len;
+	int		len;
 
 	i = 0;
 	j = 0;
