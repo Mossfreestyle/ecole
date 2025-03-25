@@ -18,28 +18,23 @@ static int	is_set(char c, const char *set)
 char	*ft_strtrim(const char *s1, const char *set)
 {
 	int		i;
-	int		j;
 	int		len;
-	int		new_len;
+	int		start;
+	int		end;
 	char	*strmalloc;
 
-	i = 0;
-	j = 0;
-	len = ft_strlen(s1) - 1;
-	while (is_set(s1[len], set) == 1)
-		len--;
-	while (is_set(s1[i], set) == 1)
-		i++;
-	new_len = len - i + 1;
-	strmalloc = ft_substr(s1, i, (new_len + 1));
-	while (i <= len && strmalloc != NULL)
-	{
-		strmalloc[j] = s1[i];
-		j++;
-		i++;
-	}
-	if (strmalloc != NULL)
-		strmalloc[j] = '\0';
+	if (!s1 || !set)
+		return (NULL);
+	len = ft_strlen(s1);
+	start = 0;
+	end = len - 1;
+	while (start < len && is_set(s1[start], set) == 1)
+		start++;
+	if (start == len)
+		return (ft_strdup(""));
+	while (end > start && is_set(s1[end], set) == 1)
+		end--;
+	strmalloc = ft_substr(s1, start, end - start + 1);
 	return (strmalloc);
 }
 

@@ -5,12 +5,28 @@ static int	ft_countlen(long int n)
 	int	len;
 
 	len = 0;
+	if (n == 0)
+		return (1);
 	while (n > 0)
 	{
 		n = n / 10;
 		len++;
 	}
 	return (len);
+}
+
+char	*ft_strcpy(char *dst, const char *src)
+{
+	int	i;
+
+	i = 0;
+    while (src[i])
+    {
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }
 
 static char	*ft_pos(char *str, long int n)
@@ -38,6 +54,13 @@ static char	*ft_neg(char *str, long int n)
 	int	len;
 	int	temp_len;
 
+	if (n == -2147483648)
+    {
+        str = malloc(sizeof(char) * 12);
+        if (str == NULL)
+            return (NULL);
+        return (ft_strcpy(str, "-2147483648"), str);
+    }
 	n *= -1;
 	len = ft_countlen(n);
 	temp_len = len;
