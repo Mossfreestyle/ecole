@@ -68,19 +68,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-//char    *ft_strncpy(char *dst, const char *src, size_t len);
-//char    *ft_strcpy(char *dst, const char *src);
-//char    *ft_strstr(const char *s1, const char *s2);
-//int ft_power(int nb, int power);
-//void    ft_putchar(char c);
-//void    ft_putnbr(int n);
-//void    ft_putstr(char *str);
-//int ft_sqrt(int nb);
-//char    *ft_strcat(char *s1, const char *s2);
-//int ft_strcmp(const char *s1, const char *s2);
-//char    *ft_strrev(char *str);
-//void    ft_swap(int *a, int *b);
-//char    *ft_strncat(char *s1, const char *s2, size_t n);
-//int ft_counttab(char **tab);
 
 #endif
