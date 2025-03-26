@@ -23,18 +23,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		i = n;
 		while (i > 0)
 		{
-			((unsigned char *)dest)[i - 1] = ((const unsigned char *)src)[i - 1];
+			memcpy(dest + i - 1, src + i - 1, 1);
 			i--;
 		}
 	}
 	else
 	{
-		i = 0;
-		while (i < n)
-		{
-			((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
-			i++;
-		}
+		memcpy(dest, src, n);
 	}
 	return (dest);
 }
