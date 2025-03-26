@@ -31,7 +31,7 @@ int	main(int argc, char **argv)
 	{
 		i = ft_isprint(atoi(argv[1]));
 		j = isprint(atoi(argv[1]));
-		printf("Mine : %d\nReal : %d\n", i, j);
+		printf("Le mien : %d\nReal : %d\n", i, j);
 	}
 	return (0);
 }

@@ -84,5 +84,4 @@ int main(void)
     ft_lstclear(&mapped_list, del_content);
 
     return (0);
-	gcc -Wall -Wextra -Werror ft_lstmap.c ft_lstnew.c ft_lstadd_back.c ft_lstclear.c -o test && ./test
 }*/

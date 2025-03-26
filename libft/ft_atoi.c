@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 {
 	if (argc == 2)
 	{
-		printf("Mine : %d\nReal : %d\n", ft_atoi(argv[1]), atoi(argv[1]));
+		printf("Le mien : %d\nReal : %d\n", ft_atoi(argv[1]), atoi(argv[1]));
 	}
 	return (0);
 }

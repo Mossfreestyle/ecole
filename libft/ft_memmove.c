@@ -47,7 +47,7 @@ int	main(int argc, char **argv)
 	{
 		i = ft_memmove(argv[1], argv[2], atoi(argv[3]));
 		j = memmove(argv[1], argv[2], atoi(argv[3]));
-		printf("Mine : %s\nReal : %s\n", i, j);
+		printf("Le mien : %s\nReal : %s\n", i, j);
 	}
 	return (0);
 }

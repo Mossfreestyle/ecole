@@ -31,7 +31,7 @@ int	main(int argc, char **argv)
 	{
 		i = ft_isalnum(argv[1][0]);
 		j = isalnum(argv[1][0]);
-		printf("Mine : %d\nReal : %d\n", i, j);
+		printf("Le mien : %d\nReal : %d\n", i, j);
 	}
 	return (0);
 }

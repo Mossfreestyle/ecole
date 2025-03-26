@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 		j = strlcpy(argv[1], argv[2], atoi(argv[3]));
 		i = ft_strlcpu(argv[1], atoi(argv[3]));
 		printf("Real : %d\n", j);
-		printf("Mienne : %d\n", i);
+		printf("Le mien : %d\n", i);
 	}
 	return (0);
 }

@@ -46,7 +46,7 @@ int	main(int argc, char **argv)
 	{
 		i = ft_strdup(argv[1]);
 		j = strdup(argv[1]);
-		printf("Mine : %s\nReal : %s\n", i, j);
+		printf("Le mien : %s\nReal : %s\n", i, j);
 	}
 	return (0);
 }

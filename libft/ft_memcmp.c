@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 	{
 		i = ft_memcmp(argv[1], argv[2], atoi(argv[3]));
 		j = memcmp(argv[1], argv[2], atoi(argv[3]));
-		printf("Mine : %d\nReal : %d\n", i, j);
+		printf("Le mien : %d\nReal : %d\n", i, j);
 	}
 	return (0);
 }
